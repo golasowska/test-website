@@ -57,15 +57,15 @@ class FormContact extends Component {
   render() {
     const { handleSubmit } = this.props;
     return (
-      <div className="col col-md-6">
+      <div className="col-sm-8 col-md-6">
         <div className="card">
           <div className="card-body">
             <form
               onSubmit={handleSubmit(this.onSubmit)}
               className="text-center"
             >
-              <Field label="Name" name="name" component={this.renderField} />
-              <Field label="Email" name="email" component={this.renderField} />
+              <Field label="Name*" name="name" component={this.renderField} />
+              <Field label="Email*" name="email" component={this.renderField} />
               <Field
                 label="Message"
                 name="message"

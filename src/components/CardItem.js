@@ -1,8 +1,13 @@
 import React from 'react';
+import { PulseLoader } from 'react-spinners';
 
 const CardItem = ({ src }) => {
   if (!src) {
-    return <div>Loading...</div>;
+    return (
+      <div className="sweet-loading m-auto">
+        <PulseLoader color={'#ff5d00'} loading={true} />
+      </div>
+    );
   }
   return (
     <div className="col-md-4">
