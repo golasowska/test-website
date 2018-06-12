@@ -46,11 +46,11 @@ class FormContact extends Component {
   onSubmit = values => {
     swal('Thanks for your message!', {
       buttons: false,
-      timer: 1500
+      timer: 2000
     });
     setTimeout(
       () => this.props.sendFormData(values, () => this.props.history.push('/')),
-      500
+      2500
     );
   };
 
@@ -94,9 +94,6 @@ function validate(values) {
   }
   if (!values.name || values.name.length < 3) {
     errors.name = 'Please enter your name.';
-  }
-  if (!values.message || values.message.length < 5) {
-    errors.message = 'Please enter a message.';
   }
   return errors;
 }

@@ -11,7 +11,7 @@ import image3 from '../assets/image_3.png';
 export default class AboutUs extends Component {
   renderCards = () => {
     return (
-      <div className="row row-card">
+      <div className="row row-card align-items-center">
         <CardItem src={image1} />
         <CardItem src={image2} />
         <CardItem src={image3} />
@@ -20,9 +20,12 @@ export default class AboutUs extends Component {
   };
   render() {
     return (
-      <div className="">
-        <Navigation />
-        <div className="container">{this.renderCards()}</div>
+      <div>
+        <div className="wrapper">
+          <Navigation />
+          <div className="container">{this.renderCards()}</div>
+          <div className="push" />
+        </div>
         <Footer />
       </div>
     );

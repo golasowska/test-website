@@ -20,7 +20,7 @@ class SkiCams extends Component {
     let pianiCam1 = Object.assign({}, pianiCams[604]);
     let pianiCam2 = Object.assign({}, pianiCams[605]);
     return (
-      <div className="row row-card">
+      <div className="row row-ski-card">
         <CardSki src1={balmeCam1.url} src2={balmeCam2.url} title="Balme" />
         <CardSki
           src1={pianiCam1.url}
@@ -33,8 +33,11 @@ class SkiCams extends Component {
   render() {
     return (
       <div>
-        <Navigation />
-        <div className="container">{this.renderCardCams()}</div>
+        <div className="wrapper">
+          <Navigation />
+          <div className="container">{this.renderCardCams()}</div>
+          <div className="push" />
+        </div>
         <Footer />
       </div>
     );

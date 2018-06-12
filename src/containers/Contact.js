@@ -8,11 +8,14 @@ export default class Contact extends Component {
   render() {
     return (
       <div>
-        <Navigation />
-        <div className="container">
-          <div className="row row-contact justify-content-center align-items-center">
-            <FormContact history={this.props.history} />
+        <div className="wrapper">
+          <Navigation />
+          <div className="container">
+            <div className="row row-card justify-content-center align-items-center">
+              <FormContact history={this.props.history} />
+            </div>
           </div>
+          <div className="push" />
         </div>
         <Footer />
       </div>

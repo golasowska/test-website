@@ -5,7 +5,7 @@ const CardItem = ({ src }) => {
     return <div>Loading...</div>;
   }
   return (
-    <div className="col col-md-4">
+    <div className="col-md-4">
       <div className="card">
         <img className="card-img-top" src={src} alt="lorem ipsum" />
         <div className="card-body">

@@ -2,6 +2,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, monospace;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  margin-bottom: -110px;
+}
+
+.push {
+  height: 110px;
 }
 
 /* NAVBAR */
@@ -33,15 +43,12 @@ body {
 /* ABOUT US */
 
 .row-card {
-  margin-top: 38px;
+  min-height: calc(100vh - 290px);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* CONTACT */
-
-.row-contact {
-  margin-top: 120px;
-  margin-bottom: 120px;
-}
 
 .custom-file-control,
 .form-control,
@@ -82,6 +89,14 @@ textarea.message.form-control {
 .is-focused .form-control {
   background-image: linear-gradient(0deg, #03a9f4 2px, rgba(0, 150, 136, 0) 0),
     linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, transparent 0);
+}
+
+/* SKICAMS */
+
+.row-ski-card {
+  min-height: calc(100vh - 290px);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
