@@ -7,10 +7,10 @@ const CardItem = ({ src }) => {
   return (
     <div className="col col-md-4">
       <div className="card">
-        <img className="card-img-top" src={src} alt="Card image cap" />
+        <img className="card-img-top" src={src} alt="lorem ipsum" />
         <div className="card-body">
-          <h5 classclassName="card-title">Lorem ipsum</h5>
-          <p classclassName="card-text">
+          <h5 className="card-title">Lorem ipsum</h5>
+          <p className="card-text">
             Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.
           </p>
         </div>
